@@ -1,13 +1,12 @@
 #include "main.h"
-
 /**
  * _atoi - convert string to an integer.
- * @s: pointer to a character string.
- * Return: void
+ * @s: pointer to a character string
+ * Return: void.
  */
 int _atoi(char *s)
 {
-	int ign;
+	int sign;
 	unsigned int num;
 	char *temp;
 
