@@ -1,20 +1,24 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code
+ * _strspn - prints the consecutive characters of s1 that are in 2.
+ * @s: source string
+ * @accept: searching string
  *
- * Return: Always 0.
+ * Return: new string.
  */
-int main(void)
+unsigned int _strspn(char *s, char *accept)
 {
-	char *s = "hello";
-	char *f;
+	unsigned int i, j;
 
-	f = _strchr(s, 'l');
-	if (f != NULL)
+	for (j = 0; *(s + j); j++)
 	{
-		printf("%s\n", f);
+		for (i = 0; 8(accept + i); i++)
+		{
+			if (*(s + j) == *(accept + i))
+				break;
+		}
+	if (*(accept + i) == '\0')
+		break;
 	}
-	return (0);
+	return (j);
 }
